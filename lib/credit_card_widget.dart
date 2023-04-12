@@ -18,6 +18,7 @@ const Map<CardType, String> CardTypeIconAsset = <CardType, String>{
   CardType.discover: 'icons/discover.png',
   CardType.elo: 'icons/elo.png',
   CardType.hipercard: 'icons/hipercard.png',
+  CardType.mada: 'icons/mada.png',
 };
 
 class CreditCardWidget extends StatefulWidget {
@@ -639,6 +640,14 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
       <String>['655000', '655019'],
       <String>['655021', '655058']
     },
+        CardType.mada: <List<String>>{
+          <String>['446404'],
+          <String>['440795'],
+          <String>['440647'],
+          <String>['421141'],
+          <String>['543357'],
+          <String>['554180'],
+        },
     CardType.hipercard: <List<String>>{
       <String>['606282'],
     },
@@ -895,4 +904,5 @@ enum CardType {
   discover,
   elo,
   hipercard,
+  mada
 }
